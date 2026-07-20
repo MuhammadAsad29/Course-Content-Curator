@@ -6,7 +6,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104-009688?style=flat-square&logo=fastapi)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--5.3-412991?style=flat-square&logo=openai)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--5.2-412991?style=flat-square&logo=openai)
 ![SQLite](<https://img.shields.io/badge/SQLite-Local%20DB-003B57?style=flat-square&logo=sqlite>)
 
 ---
@@ -197,17 +197,17 @@ FastAPI → JSON response → React frontend renders the course
 
 ## 🛠️ Tech Stack
 
-| Layer             | Technology                      |
-| ----------------- | ------------------------------- |
-| Backend Framework | FastAPI                         |
-| ASGI Server       | Uvicorn                         |
-| AI / LLM          | OpenAI API (GPT-5.3)            |
-| Web Search        | `googlesearch-python`         |
-| Video Search      | `youtube-search`              |
-| Database          | SQLite (via Python`sqlite3`)  |
-| Frontend          | React 19 + Vite 8               |
-| UI Icons          | Lucide React                    |
-| Environment       | `python-dotenv`               |
+| Layer             | Technology                     |
+| ----------------- | ------------------------------ |
+| Backend Framework | FastAPI                        |
+| ASGI Server       | Uvicorn                        |
+| AI / LLM          | OpenAI API (GPT-5.2)           |
+| Web Search        | `googlesearch-python`        |
+| Video Search      | `youtube-search`             |
+| Database          | SQLite (via Python`sqlite3`) |
+| Frontend          | React 19 + Vite 8              |
+| UI Icons          | Lucide React                   |
+| Environment       | `python-dotenv`              |
 
 ---
 
@@ -223,7 +223,7 @@ python test_search.py
 
 - **Google Search Rate Limiting** — The free `googlesearch-python` library may return `429 Too Many Requests` if called too frequently. Wait a few minutes and try again.
 - **OpenAI Quota** — If your OpenAI key has exceeded its quota, the app automatically falls back to generating course content from search results without LLM assistance.
-- **Model Name** — This project uses `gpt-5.3` in `agent.py`. Ensure your OpenAI account has access to this model. If not, fall back to `gpt-4o` or `gpt-4-turbo`.
+- **Model Name** — This project uses `gpt-5.2` in `agent.py`. Ensure your OpenAI account has access to this model. If not, fall back to `gpt-4o` or `gpt-4-turbo`.
 
 ---
 
